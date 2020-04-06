@@ -10,3 +10,13 @@ print(list)
 ['charlie', 'foxtrot']
 
  """
+
+a = ['alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel', 'india']
+
+for i in range(1, len(a)):
+    Word = a[i-1]
+    WordLength = Word.split()
+    if len(WordLength) == 7: pass
+    else: del a[i-1]
+
+print(a)
