@@ -13,10 +13,10 @@ print(list)
 
 a = ['alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel', 'india']
 
-for i in range(1, len(a)):
-    Word = a[i-1]
-    WordLength = Word.split()
-    if len(WordLength) == 7: pass
-    else: del a[i-1]
+i = 0
+while i < len(a):
+    if len(a[i]) != 7:
+        del (a[i])
+    i += 1
 
 print(a)

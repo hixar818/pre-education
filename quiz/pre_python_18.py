@@ -19,9 +19,9 @@ file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
 Patchwork = '.'.join(file)
 list = Patchwork.split('.')
 
-for i in range(1, len(list)):
-    if i % 2 == 0: del list[i-1]
-    else: pass
+for i in range(0, len(list)-1):
+    if i % 2 == 0: pass
+    else: del list[i]
 
 new_list = list
 
